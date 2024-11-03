@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Farming Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Welcome to Time Farming</h1>
+            <div class="greeting" id="welcome-message">Hello, Farmer!</div>
+        </header>
+
+        <div class="stats">
+            <div class="coin-info">
+                <span>Total Earned: </span>
+                <span id="total-earn">0</span> Coins
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="start-farming">Start Farming</button>
+            <button id="claim-coins" disabled>Claim Coins</button>
+        </div>
+
+        <footer>
+            <nav>
+                <button id="friends">Friends</button>
+                <button id="tasks">Tasks</button>
+                <button id="zones">Zone</button>
+                <div class="dropdown">
+                    <button id="airdrop">Airdrop</button>
+                    <div id="wallet-options" class="dropdown-content" style="display: none;">
+                        <button id="connect-ton-wallet">Connect TON Wallet</button>
+                    </div>
+                </div>
+                <button id="swipe" disabled>Swipe (Coming Soon)</button>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

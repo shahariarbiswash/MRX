@@ -1,0 +1,101 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header {
+    text-align: center;
+}
+
+.greeting {
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    left: 20px; /* Distance from the left */
+    top: 20px; /* Distance from the top */
+    font-size: 20px; /* Font size for the greeting */
+    color: #333; /* Color of the greeting text */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.stats {
+    margin: 20px 0;
+}
+
+.coin-info {
+    font-size: 18px;
+}
+
+.actions {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #ccc; /* Grey when disabled */
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    margin-top: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position the dropdown */
+    background-color: #f9f9f9; /* Dropdown background color */
+    min-width: 160px; /* Set a minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1; /* Ensure it appears on top */
+}
+
+.dropdown-content button {
+    color: black; /* Button text color */
+    padding: 12px 16px; /* Button padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Full-width buttons */
+    border: none; /* No border */
+    background: none; /* No background */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.dropdown-content button:hover {
+    background-color: #f1f1f1; /* Background color on hover */
+}
