@@ -18,7 +18,7 @@ function startFarming() {
     // Start or restart the farming interval
     farmingInterval = setInterval(() => {
         coinsEarned += 0.000001; // Earn 0.000001 coins every 3 seconds
-        document.getElementById("claim-coins").textContent = `Claim Coins (${coinsEarned.toFixed(6)})`;
+        document.getElementById("claim-coins").textContent = `Claim $MRX (${coinsEarned.toFixed(6)})`;
     }, 3000); // 3000 milliseconds = 3 seconds
 }
 
@@ -31,7 +31,7 @@ document.getElementById("claim-coins").addEventListener("click", () => {
         document.getElementById("total-earn").textContent = totalCoins.toFixed(6);
         
         // Reset earned coins display
-        document.getElementById("claim-coins").textContent = "Claim Coins";
+        document.getElementById("claim-coins").textContent = "Claim $MRX";
         coinsEarned = 0;
     }
 });
